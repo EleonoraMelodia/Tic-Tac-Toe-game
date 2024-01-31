@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Slab:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Josefin+Sans:wght@600&family=Merienda:wght@300&family=Nabla&family=Nanum+Brush+Script&family=Single+Day&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Single Day", cursivee;
   line-height: 1.5;
 
   color: #ebe7ef;
@@ -18,12 +18,11 @@ html {
 }
 
 body {
-  background: radial-gradient(
-      circle at top,
-      rgba(241, 210, 70, 0.98),
-      rgba(250, 176, 103, 0.87)
+  background: linear-gradient(
+      rgba(123, 238, 131, 0.98),
+      rgba(223, 140, 240, 0.87)
     ),
-    url('bg-pattern-dark.png');
+    url("bg-pattern-dark.png");
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
   min-height: 110rem;
@@ -41,10 +40,10 @@ header img {
 }
 
 h1 {
-  font-family: 'Caprasimo', cursive;
+  font-family: "Single Day", cursivee;
   font-size: 3rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #1f035f;
 }
 
 #game-container {
@@ -52,7 +51,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  background: linear-gradient(#54b2e4, #84119e);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -75,20 +74,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: #58e730;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #58e730;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  color: #58e730;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -97,7 +96,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #58e730;
 }
 
 .player {
@@ -127,7 +126,7 @@ h1 {
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  background-color: #dfec2f;
   text-align: center;
   text-transform: uppercase;
 }
@@ -151,9 +150,9 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: #9ff831;
   border: none;
-  font-family: 'Caprasimo', cursive;
+  font-family: "Single Day", cursive;
   font-size: 4rem;
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
   animation: pulse-text-size 2s infinite ease-out;
@@ -182,11 +181,12 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
-  background: #aca788;
-  color: #3f3b00;
+  background: #cdeaeb;
+  text-shadow: 2px 2px 4px rgb(33, 198, 25);
+  color: #ecffea;
   font-size: 5rem;
   cursor: pointer;
-  font-family: 'Caprasimo', cursive;
+  font-family: "Single Day", cursive;
   padding: 1rem;
 }
 
@@ -200,15 +200,15 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 38, 23, 0.95);
+  background-color: rgba(61, 213, 53, 0.95);
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
 #game-over h2 {
-  font-family: 'Caprasimo', cursive;
+  font-family: "Single Day", cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: #fc8d56;
   margin: 0;
 }
 
@@ -255,17 +255,17 @@ ol {
 }
 
 #log li.highlighted {
-  background-color: #3f3b00;
+  background-color: #0f1583;
   color: white;
 }
 
 #game-hints {
   text-align: center;
-  color: #46432f;
+  color: #0f1583;
 }
 
 #game-hints h2 {
-  font-family: 'Caprasimo', cursive;
+  font-family: "Single Day", cursive;
   font-size: 2rem;
   margin: 0;
 }
