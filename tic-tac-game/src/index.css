@@ -18,14 +18,23 @@ html {
 }
 
 body {
-  background: linear-gradient(
-      rgba(123, 238, 131, 0.98),
-      rgba(223, 140, 240, 0.87)
-    ),
-    url("bg-pattern-dark.png");
-  background-repeat: repeat;
-  background-size: 100% 100%, 30% 30%, 100% 100%;
-  min-height: 110rem;
+  background-image: url("flowers.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Usa 'contain' per adattare l'immagine senza strabordare */
+  background-position: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  background-image: url("onda.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* Usa 'contain' per adattare l'immagine senza strabordare */
+  background-position: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -43,7 +52,7 @@ h1 {
   font-family: "Single Day", cursivee;
   font-size: 3rem;
   margin: 0 auto 3rem auto;
-  color: #1f035f;
+  color: black;
 }
 
 #game-container {
@@ -51,7 +60,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#54b2e4, #84119e);
+  background-color: rgba(255, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -68,26 +77,29 @@ h1 {
 
 #players li {
   display: flex;
+  border-radius: 20px;
   align-items: center;
   width: 50%;
   border: 2px solid transparent;
 }
 
 #players.highlight-player li.active {
-  border-color: #58e730;
+  border-color: black;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #58e730;
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #58e730;
+  color: white;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -96,7 +108,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #58e730;
+  color: red;
 }
 
 .player {
@@ -126,7 +138,7 @@ h1 {
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #dfec2f;
+  background-color: red;
   text-align: center;
   text-transform: uppercase;
 }
@@ -150,7 +162,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #9ff831;
+  color: red;
   border: none;
   font-family: "Single Day", cursive;
   font-size: 4rem;
@@ -181,8 +193,9 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
+  border-radius: 100%;
   background: #cdeaeb;
-  text-shadow: 2px 2px 4px rgb(33, 198, 25);
+  text-shadow: 2px 2px 4px rgb(198, 25, 25);
   color: #ecffea;
   font-size: 5rem;
   cursor: pointer;
@@ -200,7 +213,10 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(61, 213, 53, 0.95);
+
+  background-image: url('sun.png');
+  background-size: cover;
+  background-blend-mode: overlay;
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
@@ -208,14 +224,14 @@ ol {
   font-family: "Single Day", cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fc8d56;
+  color: black;
   margin: 0;
 }
 
 #game-over p {
   font-size: 2rem;
   text-align: center;
-  color: #e1dec7;
+  color: black;
 }
 
 #game-over button {
@@ -223,25 +239,30 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid red;
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s, color 0.2s;
-  box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+  box-shadow: 0 0 8px rgb(255, 255, 255);
 }
 
 #game-over button:hover {
-  background: #fcd256;
-  color: #3f3b00;
+  background: red;
+  color: white;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.characters {
+  width: 100px;
+  height: 100px;
 }
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  color: red;
   list-style: none;
   margin: 2rem auto;
   padding: 0;

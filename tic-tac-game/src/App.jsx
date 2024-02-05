@@ -1,7 +1,6 @@
 import Player from "./components/Player";
 import Gameboard from "./components/Gameboard";
 import { useState } from "react";
-import Log from "./components/Log";
 
 import WINNING_COMBINATIONS from "./components/winning-combinations";
 import GameOver from "./components/Game-over";
@@ -127,7 +126,6 @@ function App() {
         )}
         <Gameboard board={gameboard} onSelectSquare={handlePlayerChange} />
       </div>
-      <Log turns={gameTurns} />
     </main>
   );
 }

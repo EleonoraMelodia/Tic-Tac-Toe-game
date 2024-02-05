@@ -10,7 +10,7 @@ const Gameboard = ({ onSelectSquare, board }) => {
                   onClick={() => onSelectSquare(rowIndex, colIndex)}
                   disabled={playerSymbol !== null}
                 >
-                  {playerSymbol}
+                  {playerSymbol && <img className="characters" src={`./${playerSymbol}.png`} alt={playerSymbol} />}
                 </button>
               </li>
             ))}
