@@ -1,4 +1,4 @@
-# Tic Tac Toe Game
+# Tic Tac Toe Angry Sushi Game
 
 This is a simple Tic Tac Toe game developed with React.
 
@@ -31,8 +31,8 @@ This is a simple Tic Tac Toe game developed with React.
    Open your browser and visit [http://localhost:3000](http://localhost:3000) to play Tic Tac Toe.
 
 ## Features
-
-- **Players:** The game supports two players, 'X' and 'O'.
+-**Environment:** The game is placed in an oriental environment, breathing Japanase air.
+- **Players:** The game supports two players, 'Angry Hosomaki' and 'Angry Onigiri'.
 - **Turns:** Players take turns placing their symbols on the board.
 - **Winner:** The game automatically declares a winner when a player completes a row, column, or diagonal with their symbols ('X' or 'O').
 - **Restart:** You can restart the game at any time to begin a new match.
